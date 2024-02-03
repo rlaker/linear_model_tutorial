@@ -1,0 +1,19 @@
+name: linear_models
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - matplotlib
+  - pandas
+  - numpy
+  - scikit-learn
+  - ipython
+  - ipywidgets
+  - bambi
+  - pip
+  - pip:
+    - prophet
+    - plotly
+    - patsy
+    - tqdm
+

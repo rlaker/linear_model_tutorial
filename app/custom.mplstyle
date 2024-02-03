@@ -1,0 +1,69 @@
+# Seaborn common parameters
+# .15 = dark_gray
+# .8 = light_gray
+figure.facecolor: white
+text.color: .15
+axes.labelcolor: .15
+legend.frameon: False
+legend.numpoints: 1
+legend.scatterpoints: 1
+xtick.direction: out
+ytick.direction: out
+xtick.color: .15
+ytick.color: .15
+axes.axisbelow: True
+image.cmap: Greys
+font.family: sans-serif
+font.sans-serif: Arial, Liberation Sans, DejaVu Sans, Bitstream Vera Sans, sans-serif
+grid.linestyle: -
+lines.solid_capstyle: round
+lines.linewidth : 2
+lines.markersize : 3
+
+# Seaborn whitegrid parameters
+axes.grid: True
+axes.facecolor: white
+grid.color: .8
+xtick.major.size: 2
+ytick.major.size: 0
+xtick.minor.size: 1
+ytick.minor.size: 0
+
+## custom
+
+#cycler
+axes.prop_cycle: cycler('color', ['00a88f','ff9da1','160078','ffc508','ff6120','004ff9','ac3200'])
+
+# grid
+axes.grid.axis:  y    # which axis the grid should apply to
+axes.grid.which:  major   # grid lines at {major, minor, both} ticks
+
+#font size
+font.size : 12
+axes.titlesize : 14
+figure.titlesize: 14
+axes.labelsize : 12
+xtick.labelsize : 10
+ytick.labelsize : 10
+legend.fontsize : 10
+
+# label pad
+axes.labelpad:      8.0     # space between label and axis
+
+# spines
+axes.spines.left:   False  # display axis spines
+axes.spines.bottom: True
+axes.spines.top:    False
+axes.spines.right:  False
+
+# DATES
+date.autoformatter.year:        %y
+date.autoformatter.month:       %m/%y
+date.autoformatter.day:         %d/%m/%y
+date.autoformatter.hour:        %m-%d %H
+date.autoformatter.minute:      %d %H:%M
+date.autoformatter.second:      %H:%M:%S
+date.autoformatter.microsecond: %M:%S.%f
+
+# figsize
+figure.figsize:     10, 8  # figure size in inches
