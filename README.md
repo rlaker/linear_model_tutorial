@@ -2,6 +2,8 @@
 
 A notebook to explain the power and interpretability of linear models. Hopefully this will make complex modelling packages like `prophet` seem less like magic.
 
+> This notebook is heavily inspired by this fantastic [talk](https://youtu.be/68ABAU_V8qI?si=gHJaD7s88sX3YpWE), along with this notebook investigating cycling patterns in [Seattle](https://jakevdp.github.io/blog/2014/06/10/is-seattle-really-seeing-an-uptick-in-cycling/)
+
 ## Installation
 
 The best way to install this notebook is with [miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html) (conda's little cousin).
