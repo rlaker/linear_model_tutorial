@@ -33,3 +33,17 @@ I use [VSCode](https://code.visualstudio.com/) as my code editor since it is fre
 
 You just need to install the Jupyter extension on [VSCode](https://code.visualstudio.com/) and you should be able to the notebooks included here.
 
+# App
+
+To create the web app, run 
+
+```
+shinylive export three_models_app site
+```
+
+and then run locally with 
+
+```
+python -m http.server --directory site 8008
+```
+

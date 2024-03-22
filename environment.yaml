@@ -16,4 +16,6 @@ dependencies:
     - plotly
     - patsy
     - tqdm
+    - shiny
+    - shinylive
 

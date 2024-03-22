@@ -150,7 +150,7 @@ app_ui = ui.page_fluid(
                         ui.card(
                             ui.layout_columns(
                                 ui.card(
-                                    ui.input_switch("best_fit_dummy", "Show best fit?", False),  
+                                    ui.input_switch("best_fit_dummy", "Show best fit?", True),  
                                     ui.input_slider("C_1_dummy", "Monday", 0, 5, value = 1.9 , step = 0.1),
                                     ui.input_slider("C_2_dummy", "Tuesday", 0, 5, value = 3.8, step = 0.1),
                                     ui.input_slider("C_3_dummy", "Wednesday", 0, 5, value = 4.1, step = 0.1),
@@ -175,7 +175,7 @@ app_ui = ui.page_fluid(
                         ui.card(
                             ui.layout_columns(
                                 ui.card(
-                                    ui.input_switch("best_fit_rbf", "Show best fit?", False),  
+                                    ui.input_switch("best_fit_rbf", "Show best fit?", True),  
                                     ui.input_slider("width", "Width", 0.01, 0.5, value = 0.3 , step = 0.01),
                                     ui.input_slider("C_1_rbf", "Monday", 0, 5, value =  1.2, step = 0.1),
                                     ui.input_slider("C_2_rbf", "Tuesday", 0, 5, value = 1.9, step = 0.1),
@@ -200,7 +200,7 @@ app_ui = ui.page_fluid(
                         ),
                         ui.layout_columns(
                             ui.card(
-                                ui.input_switch("best_fit_fourier", "Show best fit?", False),  
+                                ui.input_switch("best_fit_fourier", "Show best fit?", True),  
                                 ui.input_slider("n_order", "N order", 1, 10, value = 2 , step = 1),
                             ),
                             ui.card(
@@ -417,7 +417,7 @@ def server(input, output, session):
 
         axs.set_ylabel('y')
 
-        axs.legend(bbox_to_anchor=(0, 1, 1, 0), loc="lower left", ncol=2)
+        axs.legend(bbox_to_anchor=(0, 1, 1, 0), loc="lower left", ncol=1)
         
         return fig
     
@@ -525,7 +525,7 @@ def server(input, output, session):
 
         axs.set_ylabel('y')
 
-        axs.legend(bbox_to_anchor=(0, 1, 1, 0), loc="lower left", ncol=2)
+        axs.legend(bbox_to_anchor=(0, 1, 1, 0), loc="lower left", ncol=1)
 
         return fig
     
@@ -624,7 +624,7 @@ def server(input, output, session):
 
         axs.set_ylabel('y')
 
-        axs.legend(bbox_to_anchor=(0, 1, 1, 0), loc="lower left", ncol=2)
+        axs.legend(bbox_to_anchor=(0, 1, 1, 0), loc="lower left", ncol=1)
         print(fig)
         return fig
     
